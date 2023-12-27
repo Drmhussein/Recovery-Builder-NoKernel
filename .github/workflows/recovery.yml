@@ -14,17 +14,17 @@ on:
     types: [started]
 
 env:
-  MANIFEST: https://gitlab.com/OrangeFox/Manifest.git
-  MANIFEST_BRANCH: fox_9.0
-  DEVICE: rosy
-  DT_LINK: https://github.com/ElytrA8/recovery_rosy
-  DT_PATH: device/xiaomi/rosy
-  TARGET: recoveryimage
+  MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git
+  MANIFEST_BRANCH: twrp12.1
+  DEVICE: iPlay50_mini_pro
+  DT_LINK: https://github.com/drmhussein85/android_device_alldocube_iPlay50_mini_Pro.git
+  DT_PATH: device/alldocube/iPlay50_mini_pro
+  TARGET: vendorbootimage
   TZ: Asia/Kolkata
 
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-22
 
     steps:
        - name: Checkout
